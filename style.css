@@ -1,0 +1,102 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700';
+
+/*This applies from 0px to 600px*/
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+header{
+	height: 10%;
+	background: #2C3E50;
+}
+
+section{
+	height: 80%;
+	width: 100%;
+	background-color: #22A7F0;
+}
+
+footer {
+	height: 10%;
+	background: red;
+	clear: both;
+}
+
+ul {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	width: 25%;
+	height: 50px;
+}
+
+#votes {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.4em;
+	letter-spacing: 0.075em;
+}
+
+.btn {
+	margin: 15px 30px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 50px;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	color: #22A7F0;
+  background: #FFF;
+  line-height: 50px;
+}
+
+.btn1 {
+	border: 3px solid #FFF;
+	color: #fff;
+}
+
+.btn-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	padding: 0 15px; 
+}
+
+/*This applies from 600px onwards*/
+@media (min-width: 600px) {
+  html,
+  body {
+    height: 100%;
+  }
+	header{
+		height: 10%;
+		background: #2C3E50;
+	}
+
+	section{
+		height: 80%;
+		width: 100%;
+		background-color: #22A7F0;
+		float: left;
+	}
+
+	footer {
+		height: 10%;
+		background: #2C3E50;
+	}
+}
